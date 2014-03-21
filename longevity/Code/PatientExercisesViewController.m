@@ -58,6 +58,9 @@
                    [UIImage imageNamed:@"cardio_6"],
                    [UIImage imageNamed:@"custom"],
                    nil];
+    
+    
+    
                
     //[self configureView];
 }
