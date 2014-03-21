@@ -244,50 +244,62 @@
                                 <rect key="frame" x="638" y="81" width="382" height="658"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="cQ1-9P-pBp">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="73" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="cQ1-9P-pBp">
                                 <rect key="frame" x="62" y="109" width="192" height="630"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cardio" id="mwk-hL-wLs">
-                                        <rect key="frame" x="0.0" y="22" width="192" height="44"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cardio" rowHeight="73" id="mwk-hL-wLs">
+                                        <rect key="frame" x="0.0" y="22" width="192" height="73"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mwk-hL-wLs" id="V6V-bS-Gdj">
-                                            <rect key="frame" x="0.0" y="0.0" width="192" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="192" height="72"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="C3z-5H-Ac1" id="cbC-QN-TJi"/>
+                                    <outlet property="delegate" destination="C3z-5H-Ac1" id="8K9-Fk-ylG"/>
+                                </connections>
                             </tableView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="mUC-US-qSL">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="73" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="mUC-US-qSL">
                                 <rect key="frame" x="254" y="109" width="192" height="630"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="balance" id="ncX-ep-uN3">
-                                        <rect key="frame" x="0.0" y="22" width="192" height="44"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="balance" rowHeight="73" id="ncX-ep-uN3">
+                                        <rect key="frame" x="0.0" y="22" width="192" height="73"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ncX-ep-uN3" id="Qxn-Dy-Waw">
-                                            <rect key="frame" x="0.0" y="0.0" width="192" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="192" height="72"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="C3z-5H-Ac1" id="8oe-oV-I23"/>
+                                    <outlet property="delegate" destination="C3z-5H-Ac1" id="ySV-UQ-Cps"/>
+                                </connections>
                             </tableView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="MPB-F2-BVX">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="73" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="MPB-F2-BVX">
                                 <rect key="frame" x="446" y="109" width="192" height="630"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="strength" id="BwZ-iG-itX">
-                                        <rect key="frame" x="0.0" y="22" width="192" height="44"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="strength" rowHeight="73" id="BwZ-iG-itX">
+                                        <rect key="frame" x="0.0" y="22" width="192" height="73"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BwZ-iG-itX" id="9zJ-hY-mtW">
-                                            <rect key="frame" x="0.0" y="0.0" width="192" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="192" height="72"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="C3z-5H-Ac1" id="uG7-Of-lPO"/>
+                                    <outlet property="delegate" destination="C3z-5H-Ac1" id="fSu-8V-A8o"/>
+                                </connections>
                             </tableView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cardioHeader.png" translatesAutoresizingMaskIntoConstraints="NO" id="ALH-6J-tqS">
                                 <rect key="frame" x="62" y="81" width="192" height="28"/>
@@ -306,6 +318,11 @@
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="tableView1" destination="cQ1-9P-pBp" id="flj-he-qo0"/>
+                        <outlet property="tableView2" destination="mUC-US-qSL" id="7il-Jw-7oB"/>
+                        <outlet property="tableView3" destination="MPB-F2-BVX" id="q31-uI-jK9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aiL-a5-bnF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -490,9 +507,9 @@
     </scenes>
     <resources>
         <image name="about.png" width="62" height="103"/>
-        <image name="balanceHeader.png" width="193" height="28"/>
+        <image name="balanceHeader.png" width="192" height="28"/>
         <image name="bottomBar.png" width="62" height="172"/>
-        <image name="cardioHeader.png" width="193" height="28"/>
+        <image name="cardioHeader.png" width="192" height="28"/>
         <image name="detailBackground.png" width="382" height="658"/>
         <image name="header.png" width="1024" height="63"/>
         <image name="home.png" width="62" height="103"/>
@@ -500,7 +517,7 @@
         <image name="patientExercises.png" width="62" height="103"/>
         <image name="patientHome.png" width="962" height="768"/>
         <image name="patientProgress.png" width="62" height="103"/>
-        <image name="strengthHeader.png" width="194" height="28"/>
+        <image name="strengthHeader.png" width="192" height="28"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
