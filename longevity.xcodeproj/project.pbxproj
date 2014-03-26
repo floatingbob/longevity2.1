@@ -130,6 +130,8 @@
 		6CA3FDF318DAB4360097D201 /* tandemWalking@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CA3FDC118DAB4360097D201 /* tandemWalking@2x.png */; };
 		6CA3FDF418DAB4360097D201 /* tiptoeChair@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CA3FDC218DAB4360097D201 /* tiptoeChair@2x.png */; };
 		6CA3FDF518DAB4360097D201 /* toeReachSeated@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CA3FDC318DAB4360097D201 /* toeReachSeated@2x.png */; };
+		6CB97FF318E3480E0052976D /* PrescriberHome.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CB97FF018E3480E0052976D /* PrescriberHome.png */; };
+		6CB97FF418E3480E0052976D /* PrescriberHome@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CB97FF218E3480E0052976D /* PrescriberHome@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -251,6 +253,8 @@
 		6CA3FDC118DAB4360097D201 /* tandemWalking@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tandemWalking@2x.png"; sourceTree = "<group>"; };
 		6CA3FDC218DAB4360097D201 /* tiptoeChair@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tiptoeChair@2x.png"; sourceTree = "<group>"; };
 		6CA3FDC318DAB4360097D201 /* toeReachSeated@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toeReachSeated@2x.png"; sourceTree = "<group>"; };
+		6CB97FF018E3480E0052976D /* PrescriberHome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PrescriberHome.png; sourceTree = "<group>"; };
+		6CB97FF218E3480E0052976D /* PrescriberHome@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PrescriberHome@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -353,6 +357,7 @@
 		2D58114B18C8213A00B65C26 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				6CB97FEE18E3480E0052976D /* PrescriberHome */,
 				6CA3FD8F18DAB4360097D201 /* PatientExercises */,
 				6CA3FD7E18DA94400097D201 /* Patient */,
 				2D9F285018DA6FC200CB6AD4 /* NavBar */,
@@ -513,6 +518,32 @@
 			path = retina;
 			sourceTree = "<group>";
 		};
+		6CB97FEE18E3480E0052976D /* PrescriberHome */ = {
+			isa = PBXGroup;
+			children = (
+				6CB97FEF18E3480E0052976D /* nonretina */,
+				6CB97FF118E3480E0052976D /* retina */,
+			);
+			name = PrescriberHome;
+			path = longevity/Assets/PrescriberHome;
+			sourceTree = SOURCE_ROOT;
+		};
+		6CB97FEF18E3480E0052976D /* nonretina */ = {
+			isa = PBXGroup;
+			children = (
+				6CB97FF018E3480E0052976D /* PrescriberHome.png */,
+			);
+			path = nonretina;
+			sourceTree = "<group>";
+		};
+		6CB97FF118E3480E0052976D /* retina */ = {
+			isa = PBXGroup;
+			children = (
+				6CB97FF218E3480E0052976D /* PrescriberHome@2x.png */,
+			);
+			path = retina;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -605,6 +636,7 @@
 				2DC4A81418DA86A30079E1C7 /* bottomBar.png in Resources */,
 				2DC4A81018DA84140079E1C7 /* header@2x.png in Resources */,
 				6CA3FDCE18DAB4360097D201 /* grapevineWalking.png in Resources */,
+				6CB97FF318E3480E0052976D /* PrescriberHome.png in Resources */,
 				6CA3FDE418DAB4360097D201 /* cardioHeader@2x.png in Resources */,
 				2D9F285D18DA6FC200CB6AD4 /* about@2x.png in Resources */,
 				2D58115F18C8213A00B65C26 /* TodaysExercises_Selected.png in Resources */,
@@ -675,6 +707,7 @@
 				6CA3FDDF18DAB4360097D201 /* cardio_2@2x.png in Resources */,
 				6CA3FDE318DAB4360097D201 /* cardio_6@2x.png in Resources */,
 				2D58115B18C8213A00B65C26 /* NavBarTitle.png in Resources */,
+				6CB97FF418E3480E0052976D /* PrescriberHome@2x.png in Resources */,
 				6CA3FDDE18DAB4360097D201 /* cardio_1@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

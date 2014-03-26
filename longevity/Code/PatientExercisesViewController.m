@@ -16,6 +16,7 @@
 
 // Synthesize
 @synthesize tableView1,tableView2,tableView3;
+@synthesize detailDescriptionLabel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -58,10 +59,7 @@
                    [UIImage imageNamed:@"cardio_6"],
                    [UIImage imageNamed:@"custom"],
                    nil];
-    
-    
-    
-               
+
     //[self configureView];
 }
 
@@ -70,6 +68,17 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+- (void) setTableDetail:(NSInteger)tableRow {
+    
+    // Set Label
+    NSString *string = [NSString stringWithFormat:@"%d", tableRow];
+    self.detailDescriptionLabel.text = string; //access your arrays that you create now to get specific data
+
+
+}
+
 
 #pragma mark - Table View
 
@@ -92,7 +101,7 @@
     else if(tableView == tableView2) {
         cell = [self.tableView2 dequeueReusableCellWithIdentifier:@"balance"];
         UIImageView *av = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 192, 73)];
-        av.image = [BalanceArray objectAtIndex:indexPath.row];
+        av.image = [BalanceArray objectAtIndex:indexPath.row]; //reference this line here to see how you access an array of items. 
         cell.backgroundView = av;
         
     }
@@ -105,5 +114,28 @@
     
     return cell;
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSInteger cellNumber = indexPath.row;
+    
+    if (tableView == tableView1) {
+        
+    }
+    else if(tableView == tableView2) {
+        cellNumber += [CardioArray count];
+        
+    }
+    else if(tableView == tableView3) {
+        cellNumber += [CardioArray count] + [StrengthArray count];
+    }
+    
+    
+    // Call Method
+    [self setTableDetail:cellNumber];
+    
+}
+
+
 
 @end

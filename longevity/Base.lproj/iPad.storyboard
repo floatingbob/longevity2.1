@@ -71,17 +71,10 @@
                                 <rect key="frame" x="0.0" y="596" width="62" height="172"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ney-yo-piD">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PrescriberHome.png" translatesAutoresizingMaskIntoConstraints="NO" id="ney-yo-piD">
                                 <rect key="frame" x="62" y="81" width="962" height="687"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HOME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DfS-hd-93q">
-                                <rect key="frame" x="410" y="367" width="267" height="116"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
-                                <color key="textColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -313,22 +306,20 @@
                                 <rect key="frame" x="446" y="81" width="192" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYx-1B-EYi">
-                                <rect key="frame" x="668" y="199" width="331" height="158"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZe-cF-RG6">
+                                <rect key="frame" x="712" y="163" width="163" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <connections>
-                                    <outlet property="delegate" destination="C3z-5H-Ac1" id="5FR-3P-OGQ"/>
-                                </connections>
-                            </textView>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="detailDescriptionLabel" destination="PZe-cF-RG6" id="U9M-1l-g7X"/>
                         <outlet property="tableView1" destination="cQ1-9P-pBp" id="flj-he-qo0"/>
                         <outlet property="tableView2" destination="mUC-US-qSL" id="7il-Jw-7oB"/>
                         <outlet property="tableView3" destination="MPB-F2-BVX" id="q31-uI-jK9"/>
@@ -516,6 +507,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="PrescriberHome.png" width="962" height="705"/>
         <image name="about.png" width="62" height="103"/>
         <image name="balanceHeader.png" width="192" height="28"/>
         <image name="bottomBar.png" width="62" height="172"/>
@@ -535,10 +527,10 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="CW1-4x-8Q6"/>
+        <segue reference="BwN-j6-1Vf"/>
         <segue reference="71y-wB-zfE"/>
+        <segue reference="CW1-4x-8Q6"/>
         <segue reference="W9K-lF-DqJ"/>
         <segue reference="TsY-Ns-QxD"/>
-        <segue reference="BwN-j6-1Vf"/>
     </inferredMetricsTieBreakers>
 </document>
