@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="header.png" translatesAutoresizingMaskIntoConstraints="NO" id="9QC-8e-Bz8" userLabel="Image View - NAV BAR">
-                                <rect key="frame" x="0.0" y="18" width="1024" height="63"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="81"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iih-PO-T1u" userLabel="Button - HOME">
@@ -99,7 +99,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="header.png" translatesAutoresizingMaskIntoConstraints="NO" id="vhf-4t-MqF" userLabel="Image View - NAV BAR">
-                                <rect key="frame" x="0.0" y="18" width="1024" height="63"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="81"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWH-KX-lac" userLabel="Button - HOME">
@@ -180,7 +180,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="header.png" translatesAutoresizingMaskIntoConstraints="NO" id="4MG-vJ-4XY" userLabel="Image View - NAV BAR">
-                                <rect key="frame" x="0.0" y="18" width="1024" height="63"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="81"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJO-aL-jYa" userLabel="Button - HOME">
@@ -351,7 +351,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="header.png" translatesAutoresizingMaskIntoConstraints="NO" id="S15-PG-9Fb" userLabel="Image View - NAV BAR">
-                                <rect key="frame" x="0.0" y="18" width="1024" height="63"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="81"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DGl-Q2-qNU" userLabel="Button - HOME">
@@ -439,7 +439,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="header.png" translatesAutoresizingMaskIntoConstraints="NO" id="RKg-d7-gXK" userLabel="Image View - NAV BAR">
-                                <rect key="frame" x="0.0" y="18" width="1024" height="63"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="81"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMo-uh-5om" userLabel="Button - HOME">
@@ -512,7 +512,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yzi-wy-cjU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="661" y="4382"/>
+            <point key="canvasLocation" x="661" y="4365"/>
         </scene>
     </scenes>
     <resources>
@@ -522,7 +522,7 @@
         <image name="bottomBar.png" width="62" height="172"/>
         <image name="cardioHeader.png" width="192" height="28"/>
         <image name="detailBackground.png" width="382" height="658"/>
-        <image name="header.png" width="1024" height="63"/>
+        <image name="header.png" width="1024" height="83"/>
         <image name="home.png" width="62" height="103"/>
         <image name="patient.png" width="62" height="103"/>
         <image name="patientExercises.png" width="62" height="103"/>
@@ -536,10 +536,10 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="TsY-Ns-QxD"/>
-        <segue reference="3YM-wH-tcO"/>
-        <segue reference="BwN-j6-1Vf"/>
-        <segue reference="CW1-4x-8Q6"/>
-        <segue reference="W9K-lF-DqJ"/>
+        <segue reference="5hG-LR-a2B"/>
+        <segue reference="jfn-xf-5jM"/>
+        <segue reference="LEU-jl-3eR"/>
+        <segue reference="cs0-sc-vJz"/>
+        <segue reference="r6Z-3n-akb"/>
     </inferredMetricsTieBreakers>
 </document>

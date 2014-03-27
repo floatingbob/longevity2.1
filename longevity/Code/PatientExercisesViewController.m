@@ -14,6 +14,11 @@
 
 @implementation PatientExercisesViewController
 
+//make white header text
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
+}
+
 // Synthesize
 @synthesize tableView1,tableView2,tableView3;
 @synthesize detailDescriptionLabel;
