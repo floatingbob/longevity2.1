@@ -17,6 +17,7 @@
 // Synthesize
 @synthesize tableView1,tableView2,tableView3;
 @synthesize detailDescriptionLabel;
+@synthesize exerciseDescriptionLabel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -60,7 +61,65 @@
                    [UIImage imageNamed:@"custom"],
                    nil];
     
-    ExerciseTitle = [NSArray arrayWithObjects: @"Walking", @"Walking", @"Stair Climb", @"Stair Climb", @"Cardio 5", @"Cardio 6", @"Custom Exercise", @"Sideways Stepping", @"Sit-to-Stand", @"Tandem Walking", @"Reaching While Standing", @"Toe Reach", @"Tiptoe 12", @"Custome Exercise",@"Arm Raise", @"Biceps Curl", @"Biceps Curl", @"Leg Extend", @"Leg Extend", @"Leg Stretch", @"Custom Exercise", nil];
+    ExerciseTitle = [NSArray arrayWithObjects:
+                     //Cardio exercise title
+                     @"Walking",
+                     @"Walking",
+                     @"Stair Climb",
+                     @"Stair Climb",
+                     @"Cardio 5",
+                     @"Cardio 6",
+                     @"Custom Exercise",
+                     
+                     //Balance exercise title
+                     @"Sideways Stepping",
+                     @"Sit-to-Stand",
+                     @"Tandem Walking",
+                     @"Reaching While Standing",
+                     @"Toe Reach",
+                     @"Tiptoe 12",
+                     @"Custom Exercise",
+                     
+                     //Strength exercise title
+                     @"Arm Raise",
+                     @"Biceps Curl",
+                     @"Biceps Curl",
+                     @"Leg Extend",
+                     @"Leg Extend",
+                     @"Leg Stretch",
+                     @"Custom Exercise",
+                     nil];
+    
+    ExerciseDetail = [NSArray arrayWithObjects:
+                      
+                      //Cardio exercise scripts begin
+                      @"Walking script goes here when available",
+                      @"Walking script goes here when available",
+                      @"Stair Climb script goes here when available",
+                      @"Cardio script goes here when available",
+                      @"Cardio script goes here when available",
+                      @"Cardio script goes here",
+                      @"Custom Exercise",
+                      
+                      //Balance exercise scripts begin
+                      @"Sideways stepping is an excellent way to work on your balance and mobility. If you have difficulty balancing please make sure to take appropriate precautions including placing your fingertips on a wall for balance or involving a family member or friend in this activity in case you lose your balance. This activity begins with you standing with your feet together and knees slight bent. Please step sideways in a slow and controlled manner, being careful not to trip or fall. You will move your lead foot to the side first followed by the other foot that will touch the inside of the lead foot. It is recommended that you perform 10 steps in each direction.",
+                      @"The “Sit-to-Stand” exercise is an excellent way to improve your balance, mobility, and lower body strength. Please sit in a chair with your back straight and legs shoulder width apart. To start the movement, raise upwards and stand straight, pause for 2-3 seconds, and then return to the seated position. Please complete 10 – 12 repetitions according to your comfort.",
+                      @"During this task, you will stand straight, looking forward, with your arms stretch outwards. This exercise involves walking in a pattern such that the heel of your lead foot touches the toes of your trailing foot. Please make sure to look forward at all times. You can begin with performing at least five steps progressing to more steps (such as 10 or more steps) as you feel comfortable. This activity works on balance and coordination. At the start of a training program, you may wish to use chairs, a countertop, or a wall to assist with your balance. As you feel more comfortable you will be able to complete more steps and rely less on other objects for balance.",
+                      @"The “Reaching while Standing” exercise is an excellent way to improve your balance and mobility. If you have difficulty balancing please make sure to take appropriate precautions including reaching towards a wall, a chair, or countertop that you can use to regain your balance. You may also wish to involve a family member or friend in this activity in case you lose your balance. You will begin this activity by standing with your feet together and knees slight bent. While standing, you will attempt to reach as far forward as possible and hold this position for approximately 5 sec. Please begin slowly and be located close to a chair or wall that you can hold onto for support in the case that you lose your balance. Please complete 5-10 repetitions of this activity.",
+                      @"Toe reach script goes here when available",
+                      @"Tiptoe script goes here when available",
+                      @"",
+                      
+                      //Strength exercise scripts begin
+                      @"Arm raise script goes here when available",
+                      @"To begin this activity, take a seat in a comfortable chair with your back straight and legs approximately shoulder width apart. Select a weight that you can comfortably lift. Place the weight in your hands with your palms facing away from the body. During this activity be sure to keep your back straight and arms at the side of your body. Start the movement with one arm, and curl the weight towards your chest and then lower slowly. Please remember to breathe normally and to keep your back and wrists straight. Please complete the recommended number of repetitions and sets. For those new to this exercise or previously inactive, you should aim to complete 15-20 repetitions with both arms. Please be sure to complete the repetitions for each arm before using the other arm.",
+                      @"Same as above this time with resistance tubing (in the seated and standing positions). Place the resistance tubing under both feet. The shorter the tubing the greater the resistance. You can also use different gauges of tubing. For this exercise, our client is using moderate resistance tubing. Place the tubing in the palms of your hand. You can curl using both arms at the same time or separately. Please remember to breathe normally and to keep your back straight. Please make sure to keep your wrists straight. Complete 15-20 repetitions (to begin a program) with both arms.",
+                      @"Leg Extend script goes here when available",
+                      @"Leg Extend Seated with resistance script goes here when available",
+                      @"Leg Stretch Seated script goes here when available",
+                      @"",
+                      
+                      nil];
 
     //[self configureView];
 }
@@ -77,6 +136,7 @@
     // Set Label
     NSString *string = [NSString stringWithFormat:@"%d", tableRow];
     self.detailDescriptionLabel.text = [ExerciseTitle objectAtIndex:tableRow]; //access your arrays that you create now to get specific data
+    self.exerciseDescriptionLabel.text = [ExerciseDetail objectAtIndex:tableRow];
 
 
 }

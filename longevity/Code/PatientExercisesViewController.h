@@ -15,13 +15,15 @@
     NSArray *BalanceArray;
     NSArray *StrengthArray;
     NSArray *ExerciseTitle;
+    NSArray *ExerciseDetail;
     
 }
 
 @property (weak, nonatomic)     IBOutlet UITableView *tableView1;
 @property (weak, nonatomic)     IBOutlet UITableView *tableView2;
 @property (weak, nonatomic)     IBOutlet UITableView *tableView3;
-
+@property (weak, nonatomic) IBOutlet UITextView *exerciseDescriptionLabel;
 @property (weak, nonatomic)     IBOutlet UILabel *detailDescriptionLabel;
+
 
 @end

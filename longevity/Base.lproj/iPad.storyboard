@@ -307,13 +307,20 @@
                                 <rect key="frame" x="446" y="81" width="192" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZe-cF-RG6">
-                                <rect key="frame" x="712" y="163" width="163" height="83"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="317" translatesAutoresizingMaskIntoConstraints="NO" id="PZe-cF-RG6">
+                                <rect key="frame" x="673" y="202" width="317" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCg-vQ-5vY">
+                                <rect key="frame" x="669" y="234" width="330" height="259"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -321,6 +328,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="detailDescriptionLabel" destination="PZe-cF-RG6" id="U9M-1l-g7X"/>
+                        <outlet property="exerciseDescriptionLabel" destination="vCg-vQ-5vY" id="3Pi-F7-fbm"/>
                         <outlet property="tableView1" destination="cQ1-9P-pBp" id="flj-he-qo0"/>
                         <outlet property="tableView2" destination="mUC-US-qSL" id="7il-Jw-7oB"/>
                         <outlet property="tableView3" destination="MPB-F2-BVX" id="q31-uI-jK9"/>
@@ -530,8 +538,8 @@
     <inferredMetricsTieBreakers>
         <segue reference="TsY-Ns-QxD"/>
         <segue reference="3YM-wH-tcO"/>
-        <segue reference="QNz-oc-oAG"/>
-        <segue reference="M0o-Z6-roa"/>
-        <segue reference="j1K-6T-hIT"/>
+        <segue reference="BwN-j6-1Vf"/>
+        <segue reference="CW1-4x-8Q6"/>
+        <segue reference="W9K-lF-DqJ"/>
     </inferredMetricsTieBreakers>
 </document>
