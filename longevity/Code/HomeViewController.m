@@ -12,6 +12,9 @@
 
 @implementation HomeViewController
 
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
+}
 
 
 - (void)viewDidLoad {

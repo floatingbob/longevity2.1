@@ -59,6 +59,8 @@
                    [UIImage imageNamed:@"cardio_6"],
                    [UIImage imageNamed:@"custom"],
                    nil];
+    
+    ExerciseTitle = [NSArray arrayWithObjects: @"Walking", @"Walking", @"Stair Climb", @"Stair Climb", @"Cardio 5", @"Cardio 6", @"Custom Exercise", @"Sideways Stepping", @"Sit-to-Stand", @"Tandem Walking", @"Reaching While Standing", @"Toe Reach", @"Tiptoe 12", @"Custome Exercise",@"Arm Raise", @"Biceps Curl", @"Biceps Curl", @"Leg Extend", @"Leg Extend", @"Leg Stretch", @"Custom Exercise", nil];
 
     //[self configureView];
 }
@@ -74,7 +76,7 @@
     
     // Set Label
     NSString *string = [NSString stringWithFormat:@"%d", tableRow];
-    self.detailDescriptionLabel.text = string; //access your arrays that you create now to get specific data
+    self.detailDescriptionLabel.text = [ExerciseTitle objectAtIndex:tableRow]; //access your arrays that you create now to get specific data
 
 
 }
@@ -101,7 +103,7 @@
     else if(tableView == tableView2) {
         cell = [self.tableView2 dequeueReusableCellWithIdentifier:@"balance"];
         UIImageView *av = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 192, 73)];
-        av.image = [BalanceArray objectAtIndex:indexPath.row]; //reference this line here to see how you access an array of items. 
+        av.image = [BalanceArray objectAtIndex:indexPath.row]; //reference this line here to see how you access an array of items.
         cell.backgroundView = av;
         
     }

@@ -79,6 +79,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4vz-Xz-t83" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -527,10 +528,10 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="BwN-j6-1Vf"/>
-        <segue reference="71y-wB-zfE"/>
-        <segue reference="CW1-4x-8Q6"/>
-        <segue reference="W9K-lF-DqJ"/>
         <segue reference="TsY-Ns-QxD"/>
+        <segue reference="3YM-wH-tcO"/>
+        <segue reference="QNz-oc-oAG"/>
+        <segue reference="M0o-Z6-roa"/>
+        <segue reference="j1K-6T-hIT"/>
     </inferredMetricsTieBreakers>
 </document>

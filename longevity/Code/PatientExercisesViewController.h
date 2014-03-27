@@ -14,7 +14,8 @@
     NSArray *CardioArray;
     NSArray *BalanceArray;
     NSArray *StrengthArray;
-//    NSArray *ExerciseDetailTextArray;
+    NSArray *ExerciseTitle;
+    
 }
 
 @property (weak, nonatomic)     IBOutlet UITableView *tableView1;
