@@ -321,6 +321,20 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z39-IA-MrD">
+                                <rect key="frame" x="796" y="514" width="55" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZR-wk-k5C">
+                                <rect key="frame" x="872" y="514" width="116" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -329,6 +343,8 @@
                     <connections>
                         <outlet property="detailDescriptionLabel" destination="PZe-cF-RG6" id="U9M-1l-g7X"/>
                         <outlet property="exerciseDescriptionLabel" destination="vCg-vQ-5vY" id="3Pi-F7-fbm"/>
+                        <outlet property="repetitions" destination="Z39-IA-MrD" id="2wr-QH-ELx"/>
+                        <outlet property="repititionsClassLabel" destination="AZR-wk-k5C" id="Z4c-7t-PwO"/>
                         <outlet property="tableView1" destination="cQ1-9P-pBp" id="flj-he-qo0"/>
                         <outlet property="tableView2" destination="mUC-US-qSL" id="7il-Jw-7oB"/>
                         <outlet property="tableView3" destination="MPB-F2-BVX" id="q31-uI-jK9"/>

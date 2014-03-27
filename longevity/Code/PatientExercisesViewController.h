@@ -16,6 +16,8 @@
     NSArray *StrengthArray;
     NSArray *ExerciseTitle;
     NSArray *ExerciseDetail;
+    NSArray *ExerciseRepetitions;
+    NSArray *ExerciseRepetitionsClass;
     
 }
 
@@ -24,6 +26,8 @@
 @property (weak, nonatomic)     IBOutlet UITableView *tableView3;
 @property (weak, nonatomic) IBOutlet UITextView *exerciseDescriptionLabel;
 @property (weak, nonatomic)     IBOutlet UILabel *detailDescriptionLabel;
+@property (weak, nonatomic) IBOutlet UILabel *repetitions;
+@property (weak, nonatomic) IBOutlet UILabel *repititionsClassLabel;
 
 
 @end

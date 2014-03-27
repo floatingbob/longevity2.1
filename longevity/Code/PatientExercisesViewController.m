@@ -23,6 +23,7 @@
 @synthesize tableView1,tableView2,tableView3;
 @synthesize detailDescriptionLabel;
 @synthesize exerciseDescriptionLabel;
+@synthesize repetitions;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -125,6 +126,31 @@
                       @"",
                       
                       nil];
+    ExerciseRepetitions = [NSArray arrayWithObjects: //number value ex. "10" "Steps"
+                           
+                        //Cardio
+                        @"1",@"2",@"3",@"4",@"5",@"6",@"7",
+                           
+                        //Balance
+                        @"10",@"9",@"10",@"11",@"12",@"13",@"14",
+    
+                        //Strength
+                        @"15",@"16",@"17",@"18",@"19",@"20",@"21",
+                        nil];
+    ExerciseRepetitionsClass = [NSArray arrayWithObjects: //Word value ex. "10" "Steps"
+                           
+                           //Cardio
+                           @"1",@"2",@"3",@"4",@"5",@"6",@"7",
+                           
+                           //Balance
+                           @"Steps each direction",@"9",@"10",@"11",@"12",@"13",@"14",
+                           
+                           //Strength
+                           @"15",@"16",@"17",@"18",@"19",@"20",@"21",
+                           nil];
+ 
+    
+    
 
     //[self configureView];
 }
@@ -142,6 +168,10 @@
     NSString *string = [NSString stringWithFormat:@"%d", tableRow];
     self.detailDescriptionLabel.text = [ExerciseTitle objectAtIndex:tableRow]; //access your arrays that you create now to get specific data
     self.exerciseDescriptionLabel.text = [ExerciseDetail objectAtIndex:tableRow];
+    self.repetitions.text = [ExerciseRepetitions objectAtIndex:tableRow];
+    self.repititionsClassLabel.text = [ExerciseRepetitionsClass objectAtIndex:tableRow];
+    
+    
 
 
 }
