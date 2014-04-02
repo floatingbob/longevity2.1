@@ -20,10 +20,11 @@
 }
 
 // Synthesize
-@synthesize tableView1,tableView2,tableView3;
-@synthesize detailDescriptionLabel;
-@synthesize exerciseDescriptionLabel;
-@synthesize repetitions;
+@synthesize tableView1,tableView2,tableView3 ;
+@synthesize detailDescriptionLabel ;
+@synthesize exerciseDescriptionLabel ;
+@synthesize repetitions ;
+@synthesize timesPerWeekNumber ;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -96,6 +97,7 @@
                      @"Custom Exercise",
                      nil];
     
+    //Script given by UBC for exercise execution
     ExerciseDetail = [NSArray arrayWithObjects:
                       
                       //Cardio exercise scripts begin
@@ -104,7 +106,7 @@
                       @"Stair Climb script goes here when available",
                       @"Cardio script goes here when available",
                       @"Cardio script goes here when available",
-                      @"Cardio script goes here",
+                      @"Cardio script goes here when available",
                       @"Custom Exercise",
                       
                       //Balance exercise scripts begin
@@ -114,7 +116,7 @@
                       @"The “Reaching while Standing” exercise is an excellent way to improve your balance and mobility. If you have difficulty balancing please make sure to take appropriate precautions including reaching towards a wall, a chair, or countertop that you can use to regain your balance. You may also wish to involve a family member or friend in this activity in case you lose your balance. You will begin this activity by standing with your feet together and knees slight bent. While standing, you will attempt to reach as far forward as possible and hold this position for approximately 5 sec. Please begin slowly and be located close to a chair or wall that you can hold onto for support in the case that you lose your balance. Please complete 5-10 repetitions of this activity.",
                       @"Toe reach script goes here when available",
                       @"Tiptoe script goes here when available",
-                      @"",
+                      @"Custom Exercise",
                       
                       //Strength exercise scripts begin
                       @"Arm raise script goes here when available",
@@ -123,32 +125,60 @@
                       @"Leg Extend script goes here when available",
                       @"Leg Extend Seated with resistance script goes here when available",
                       @"Leg Stretch Seated script goes here when available",
-                      @"",
+                      @"Custom Exercise",
                       
                       nil];
-    ExerciseRepetitions = [NSArray arrayWithObjects: //number value ex. "10" "Steps"
+    
+    //number value ex. "10" Steps
+    ExerciseRepetitions = [NSArray arrayWithObjects:
                            
                         //Cardio
-                        @"1",@"2",@"3",@"4",@"5",@"6",@"7",
+                        @"15",@"10",@"10",@"1",@"1",@"1",@"1",
                            
                         //Balance
-                        @"10",@"9",@"10",@"11",@"12",@"13",@"14",
+                        @"10",@"10-12",@"5-10",@"11",@"12",@"13",@"14",
     
                         //Strength
-                        @"15",@"16",@"17",@"18",@"19",@"20",@"21",
+                        @"15",@"15-20",@"15-20",@"15-20",@"15-20",@"15-20",@"15-20",
                         nil];
-    ExerciseRepetitionsClass = [NSArray arrayWithObjects: //Word value ex. "10" "Steps"
+    // 10 "Steps"
+    ExerciseRepetitionsClass = [NSArray arrayWithObjects: //Word value ex. 10 "Steps"
                            
-                           //Cardio
-                           @"1",@"2",@"3",@"4",@"5",@"6",@"7",
+                        //Cardio
+                        @"Minutes",@"Minutes",@"Reps per leg",@"Reps",@"Reps",@"Reps",@"Reps",
                            
-                           //Balance
-                           @"Steps each direction",@"9",@"10",@"11",@"12",@"13",@"14",
+                        //Balance
+                        @"Steps per direction",@"Reps",@"Reps",@"Reps",@"Reps",@"Reps",@"Reps",
                            
-                           //Strength
-                           @"15",@"16",@"17",@"18",@"19",@"20",@"21",
-                           nil];
- 
+                        //Strength
+                        @"Reps per arm",@"Reps per arm",@"Reps per arm",@"Reps per leg",@"Reps per leg",@"Reps per leg",@"Reps",
+                        nil];
+    
+    //number value ex. "10" Times per day
+    ExerciseTimesPerDay = [NSArray arrayWithObjects:
+                           
+                        //Cardio
+                        @"15",@"10",@"10",@"1",@"1",@"1",@"1",
+                           
+                        //Balance
+                        @"10",@"10-12",@"5-10",@"11",@"12",@"13",@"14",
+                           
+                        //Strength
+                        @"15",@"15-20",@"15-20",@"15-20",@"15-20",@"15-20",@"15-20",
+                        nil];
+    // 10 "Times per day"
+    ExerciseTimesPerDayClass = [NSArray arrayWithObjects: //Word value ex. 10 "Steps"
+                                
+                        //Cardio
+                        @"Minutes",@"Minutes",@"Reps per leg",@"Reps",@"Reps",@"Reps",@"Reps",
+                                
+                        //Balance
+                        @"Steps per direction",@"Reps",@"Reps",@"Reps",@"Reps",@"Reps",@"Reps",
+                                
+                        //Strength
+                        @"Reps per arm",@"Reps per arm",@"Reps per arm",@"Reps per leg",@"Reps per leg",@"Reps per leg",@"Reps",
+                        nil];
+    
     
     
 
@@ -165,11 +195,13 @@
 - (void) setTableDetail:(NSInteger)tableRow {
     
     // Set Label
-    NSString *string = [NSString stringWithFormat:@"%d", tableRow];
+    NSString *string = [NSString stringWithFormat:@"%d", tableRow] ;
     self.detailDescriptionLabel.text = [ExerciseTitle objectAtIndex:tableRow]; //access your arrays that you create now to get specific data
-    self.exerciseDescriptionLabel.text = [ExerciseDetail objectAtIndex:tableRow];
-    self.repetitions.text = [ExerciseRepetitions objectAtIndex:tableRow];
-    self.repititionsClassLabel.text = [ExerciseRepetitionsClass objectAtIndex:tableRow];
+    self.exerciseDescriptionLabel.text = [ExerciseDetail objectAtIndex:tableRow] ;
+    self.repetitions.text = [ExerciseRepetitions objectAtIndex:tableRow] ;
+    self.repititionsClassLabel.text = [ExerciseRepetitionsClass objectAtIndex:tableRow] ;
+    self.timesPerWeekNumber.text = [ExerciseTimesPerDay objectAtIndex:tableRow] ;
+    self.timesPerWeekClass.text = [ExerciseTimesPerDayClass objectAtIndex:tableRow] ;
     
     
 

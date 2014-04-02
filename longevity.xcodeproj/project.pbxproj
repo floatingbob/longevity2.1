@@ -68,6 +68,8 @@
 		2DC4A81518DA86A30079E1C7 /* bottomBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DC4A81218DA86A30079E1C7 /* bottomBar.png */; };
 		2DC4A81618DA86A30079E1C7 /* bottomBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DC4A81318DA86A30079E1C7 /* bottomBar@2x.png */; };
 		2DC4A81718DA86A30079E1C7 /* bottomBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DC4A81318DA86A30079E1C7 /* bottomBar@2x.png */; };
+		6C3AE18B18EB4E0B00E797C3 /* PrescriberProgress.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C3AE18818EB4E0B00E797C3 /* PrescriberProgress.png */; };
+		6C3AE18C18EB4E0B00E797C3 /* PrescriberProgress@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C3AE18A18EB4E0B00E797C3 /* PrescriberProgress@2x.png */; };
 		6CA3FD7018DA8D310097D201 /* PatientExercisesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA3FD6E18DA8D310097D201 /* PatientExercisesViewController.m */; };
 		6CA3FD7718DA8DBE0097D201 /* PatientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA3FD7618DA8DBE0097D201 /* PatientViewController.m */; };
 		6CA3FD7A18DA8DFB0097D201 /* PatientProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA3FD7918DA8DFB0097D201 /* PatientProgressViewController.m */; };
@@ -187,6 +189,8 @@
 		2DC4A80D18DA84140079E1C7 /* header@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header@2x.png"; sourceTree = "<group>"; };
 		2DC4A81218DA86A30079E1C7 /* bottomBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottomBar.png; sourceTree = "<group>"; };
 		2DC4A81318DA86A30079E1C7 /* bottomBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bottomBar@2x.png"; sourceTree = "<group>"; };
+		6C3AE18818EB4E0B00E797C3 /* PrescriberProgress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PrescriberProgress.png; sourceTree = "<group>"; };
+		6C3AE18A18EB4E0B00E797C3 /* PrescriberProgress@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PrescriberProgress@2x.png"; sourceTree = "<group>"; };
 		6CA3FD6D18DA8D310097D201 /* PatientExercisesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PatientExercisesViewController.h; path = longevity/Code/PatientExercisesViewController.h; sourceTree = SOURCE_ROOT; };
 		6CA3FD6E18DA8D310097D201 /* PatientExercisesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PatientExercisesViewController.m; path = longevity/Code/PatientExercisesViewController.m; sourceTree = SOURCE_ROOT; };
 		6CA3FD7518DA8DBE0097D201 /* PatientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PatientViewController.h; path = longevity/Code/PatientViewController.h; sourceTree = SOURCE_ROOT; };
@@ -357,6 +361,7 @@
 		2D58114B18C8213A00B65C26 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				6C3AE18618EB4E0B00E797C3 /* PatientProgress */,
 				6CB97FEE18E3480E0052976D /* PrescriberHome */,
 				6CA3FD8F18DAB4360097D201 /* PatientExercises */,
 				6CA3FD7E18DA94400097D201 /* Patient */,
@@ -432,6 +437,32 @@
 				2D9F285A18DA6FC200CB6AD4 /* progress@2x.png */,
 			);
 			path = NavBar;
+			sourceTree = "<group>";
+		};
+		6C3AE18618EB4E0B00E797C3 /* PatientProgress */ = {
+			isa = PBXGroup;
+			children = (
+				6C3AE18718EB4E0B00E797C3 /* nonRetina */,
+				6C3AE18918EB4E0B00E797C3 /* retina */,
+			);
+			name = PatientProgress;
+			path = longevity/Assets/PatientProgress;
+			sourceTree = SOURCE_ROOT;
+		};
+		6C3AE18718EB4E0B00E797C3 /* nonRetina */ = {
+			isa = PBXGroup;
+			children = (
+				6C3AE18818EB4E0B00E797C3 /* PrescriberProgress.png */,
+			);
+			path = nonRetina;
+			sourceTree = "<group>";
+		};
+		6C3AE18918EB4E0B00E797C3 /* retina */ = {
+			isa = PBXGroup;
+			children = (
+				6C3AE18A18EB4E0B00E797C3 /* PrescriberProgress@2x.png */,
+			);
+			path = retina;
 			sourceTree = "<group>";
 		};
 		6CA3FD7E18DA94400097D201 /* Patient */ = {
@@ -659,6 +690,7 @@
 				6CA3FDC418DAB4360097D201 /* balanceHeader.png in Resources */,
 				6CA3FDF018DAB4360097D201 /* strength_6@2x.png in Resources */,
 				2D58116318C8213A00B65C26 /* ViewProgress.png in Resources */,
+				6C3AE18C18EB4E0B00E797C3 /* PrescriberProgress@2x.png in Resources */,
 				6CA3FDEB18DAB4360097D201 /* strength_1@2x.png in Resources */,
 				6CA3FDED18DAB4360097D201 /* strength_3@2x.png in Resources */,
 				6CA3FD8D18DA98F80097D201 /* patientProgress.png in Resources */,
@@ -686,6 +718,7 @@
 				6CA3FD8C18DA98F80097D201 /* patientExercises@2x.png in Resources */,
 				6CA3FD8A18DA98F80097D201 /* patient@2x.png in Resources */,
 				6CA3FDD418DAB4360097D201 /* strength_3.png in Resources */,
+				6C3AE18B18EB4E0B00E797C3 /* PrescriberProgress.png in Resources */,
 				2D58116118C8213A00B65C26 /* ViewDashboard.png in Resources */,
 				6CA3FDE518DAB4360097D201 /* custom@2x.png in Resources */,
 				2D9F285B18DA6FC200CB6AD4 /* about.png in Resources */,
