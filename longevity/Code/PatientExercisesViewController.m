@@ -24,7 +24,11 @@
 @synthesize detailDescriptionLabel ;
 @synthesize exerciseDescriptionLabel ;
 @synthesize repetitions ;
+@synthesize timesPerDayNumber ;
+@synthesize timesPerDayClass ;
 @synthesize timesPerWeekNumber ;
+@synthesize timesPerWeekClass ;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -152,7 +156,7 @@
                            
                         //Strength
                         @"Reps per arm",@"Reps per arm",@"Reps per arm",@"Reps per leg",@"Reps per leg",@"Reps per leg",@"Reps",
-                        nil];
+                        nil] ;
     
     //number value ex. "10" Times per day
     ExerciseTimesPerDay = [NSArray arrayWithObjects:
@@ -165,19 +169,43 @@
                            
                         //Strength
                         @"1",@"1",@"1",@"1",@"1",@"1",@"1",
-                        nil];
+                        nil] ;
     // 10 "Times per day"
-    ExerciseTimesPerDayClass = [NSArray arrayWithObjects: //Word value ex. 10 "Steps"
+    ExerciseTimesPerDayClass = [NSArray arrayWithObjects:
                                 
                         //Cardio
-                        @"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",
+                        @"Times per day",@"Times per day",@"Times per day",@"Times per day",@"Times per day",@"Times per day",@"Times per day",
                                 
                         //Balance
-                        @"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",
+                        @"Times per day",@"Times per day",@"Times per day",@"Times per day",@"Times per day",@"Times per day",@"Times per day",
                                 
                         //Strength
-                        @"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",
+                        @"Times per day",@"Times per day",@"Times per day",@"Times per day",@"Times per day",@"Times per day",@"Times per day",
                         nil];
+    //TimesPerWeek number value ex. "10" Times per week
+    ExerciseTimesPerWeek = [NSArray arrayWithObjects:
+                           
+                           //Cardio
+                           @"1",@"1",@"1",@"1",@"1",@"1",@"1",
+                           
+                           //Balance
+                           @"1",@"1",@"1",@"1",@"1",@"1",@"1",
+                           
+                           //Strength
+                           @"1",@"1",@"1",@"1",@"1",@"1",@"1",
+                           nil] ;
+    // 10 "Times per weel"
+    ExerciseTimesPerWeekClass = [NSArray arrayWithObjects:
+                                
+                            //Cardio
+                            @"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",
+                                
+                            //Balance
+                            @"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",
+                                
+                            //Strength
+                            @"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",
+                            nil] ;
     
     
     
@@ -200,6 +228,8 @@
     self.exerciseDescriptionLabel.text = [ExerciseDetail objectAtIndex:tableRow] ;
     self.repetitions.text = [ExerciseRepetitions objectAtIndex:tableRow] ;
     self.repititionsClassLabel.text = [ExerciseRepetitionsClass objectAtIndex:tableRow] ;
+    self.timesPerDayNumber.text = [ExerciseTimesPerDay objectAtIndex:tableRow] ;
+    self.timesPerDayClass.text = [ExerciseTimesPerDayClass objectAtIndex:tableRow] ;
     self.timesPerWeekNumber.text = [ExerciseTimesPerDay objectAtIndex:tableRow] ;
     self.timesPerWeekClass.text = [ExerciseTimesPerDayClass objectAtIndex:tableRow] ;
     

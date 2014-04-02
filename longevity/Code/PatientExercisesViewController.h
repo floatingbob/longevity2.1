@@ -20,6 +20,8 @@
     NSArray *ExerciseRepetitionsClass ;
     NSArray *ExerciseTimesPerDay ;
     NSArray *ExerciseTimesPerDayClass ;
+    NSArray *ExerciseTimesPerWeek ;
+    NSArray *ExerciseTimesPerWeekClass ;
     
 }
 
@@ -30,6 +32,8 @@
 @property (weak, nonatomic)     IBOutlet UILabel *detailDescriptionLabel;
 @property (weak, nonatomic) IBOutlet UILabel *repetitions;
 @property (weak, nonatomic) IBOutlet UILabel *repititionsClassLabel;
+@property (weak, nonatomic) IBOutlet UILabel *timesPerDayNumber;
+@property (weak, nonatomic) IBOutlet UILabel *timesPerDayClass;
 @property (weak, nonatomic) IBOutlet UILabel *timesPerWeekNumber;
 @property (weak, nonatomic) IBOutlet UILabel *timesPerWeekClass;
 
