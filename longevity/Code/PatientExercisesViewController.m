@@ -158,25 +158,25 @@
     ExerciseTimesPerDay = [NSArray arrayWithObjects:
                            
                         //Cardio
-                        @"15",@"10",@"10",@"1",@"1",@"1",@"1",
+                        @"1",@"1",@"1",@"1",@"1",@"1",@"1",
                            
                         //Balance
-                        @"10",@"10-12",@"5-10",@"11",@"12",@"13",@"14",
+                        @"1",@"1",@"1",@"1",@"1",@"1",@"1",
                            
                         //Strength
-                        @"15",@"15-20",@"15-20",@"15-20",@"15-20",@"15-20",@"15-20",
+                        @"1",@"1",@"1",@"1",@"1",@"1",@"1",
                         nil];
     // 10 "Times per day"
     ExerciseTimesPerDayClass = [NSArray arrayWithObjects: //Word value ex. 10 "Steps"
                                 
                         //Cardio
-                        @"Minutes",@"Minutes",@"Reps per leg",@"Reps",@"Reps",@"Reps",@"Reps",
+                        @"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",
                                 
                         //Balance
-                        @"Steps per direction",@"Reps",@"Reps",@"Reps",@"Reps",@"Reps",@"Reps",
+                        @"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",
                                 
                         //Strength
-                        @"Reps per arm",@"Reps per arm",@"Reps per arm",@"Reps per leg",@"Reps per leg",@"Reps per leg",@"Reps",
+                        @"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",
                         nil];
     
     
