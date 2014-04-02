@@ -363,6 +363,10 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SitToStand.png" translatesAutoresizingMaskIntoConstraints="NO" id="MRp-OQ-D6V">
+                                <rect key="frame" x="800" y="89" width="204" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -559,6 +563,7 @@
     <resources>
         <image name="PrescriberHome.png" width="962" height="706"/>
         <image name="PrescriberProgress.png" width="961" height="707"/>
+        <image name="SitToStand.png" width="192" height="72"/>
         <image name="about.png" width="62" height="103"/>
         <image name="balanceHeader.png" width="192" height="28"/>
         <image name="bottomBar.png" width="62" height="172"/>
