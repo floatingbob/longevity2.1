@@ -8,9 +8,6 @@
 
 #import "PatientExercisesViewController.h"
 
-@interface PatientExercisesViewController ()
-
-@end
 
 @implementation PatientExercisesViewController
 
@@ -30,46 +27,43 @@
 @synthesize timesPerWeekClass ;
 
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    NSLog(@"viewDidLoad");
     
-    BalanceArray = [NSArray arrayWithObjects:
-                    [UIImage imageNamed:@"sidewaysStepping"],
-                    [UIImage imageNamed:@"sitToStand"],
-                    [UIImage imageNamed:@"tandemWalking"],
-                    [UIImage imageNamed:@"reachingWhileStanding"],
-                    [UIImage imageNamed:@"toeReachSeated"],
-                    [UIImage imageNamed:@"tiptoeChair"],
-                    [UIImage imageNamed:@"custom"],
+
+    
+    BalanceArray = [[NSArray alloc] initWithObjects:
+                    [UIImage imageNamed:@"sidewaysStepping.png"],
+                    [UIImage imageNamed:@"sitToStand.png"],
+                    [UIImage imageNamed:@"tandemWalking.png"],
+                    [UIImage imageNamed:@"reachingWhileStanding.png"],
+                    [UIImage imageNamed:@"toeReachSeated.png"],
+                    [UIImage imageNamed:@"tiptoeChair.png"],
+                    [UIImage imageNamed:@"custom.png"],
                     nil];
+    
+    NSLog(@"Balance Is %i \n", [BalanceArray count]);
+    
     StrengthArray = [NSArray arrayWithObjects:
-                     [UIImage imageNamed:@"strength_1"],
-                     [UIImage imageNamed:@"strength_2"],
-                     [UIImage imageNamed:@"strength_3"],
-                     [UIImage imageNamed:@"strength_4"],
-                     [UIImage imageNamed:@"strength_5"],
-                     [UIImage imageNamed:@"strength_6"],
-                     [UIImage imageNamed:@"custom"],
+                     [UIImage imageNamed:@"strength_1.png"],
+                     [UIImage imageNamed:@"strength_2.png"],
+                     [UIImage imageNamed:@"strength_3.png"],
+                     [UIImage imageNamed:@"strength_4.png"],
+                     [UIImage imageNamed:@"strength_5.png"],
+                     [UIImage imageNamed:@"strength_6.png"],
+                     [UIImage imageNamed:@"custom.png"],
                      nil];
+   
     CardioArray = [NSArray arrayWithObjects:
-                   [UIImage imageNamed:@"cardio_1"],
-                   [UIImage imageNamed:@"cardio_2"],
-                   [UIImage imageNamed:@"cardio_3"],
-                   [UIImage imageNamed:@"cardio_4"],
-                   [UIImage imageNamed:@"cardio_5"],
-                   [UIImage imageNamed:@"cardio_6"],
-                   [UIImage imageNamed:@"custom"],
+                   [UIImage imageNamed:@"cardio_1.png"],
+                   [UIImage imageNamed:@"cardio_2.png"],
+                   [UIImage imageNamed:@"cardio_3.png"],
+                   [UIImage imageNamed:@"cardio_4.png"],
+                   [UIImage imageNamed:@"cardio_5.png"],
+                   [UIImage imageNamed:@"cardio_6.png"],
+                   [UIImage imageNamed:@"custom.png"],
                    nil];
     
     ExerciseTitle = [NSArray arrayWithObjects:
@@ -145,6 +139,7 @@
                         //Strength
                         @"15",@"15-20",@"15-20",@"15-20",@"15-20",@"15-20",@"15-20",
                         nil];
+    
     // 10 "Steps"
     ExerciseRepetitionsClass = [NSArray arrayWithObjects: //Word value ex. 10 "Steps"
                            
@@ -170,6 +165,7 @@
                         //Strength
                         @"1",@"1",@"1",@"1",@"1",@"1",@"1",
                         nil] ;
+   
     // 10 "Times per day"
     ExerciseTimesPerDayClass = [NSArray arrayWithObjects:
                                 
@@ -182,35 +178,58 @@
                         //Strength
                         @"Times per day",@"Times per day",@"Times per day",@"Times per day",@"Times per day",@"Times per day",@"Times per day",
                         nil];
+   
     //TimesPerWeek number value ex. "10" Times per week
     ExerciseTimesPerWeek = [NSArray arrayWithObjects:
                            
-                           //Cardio
-                           @"1",@"1",@"1",@"1",@"1",@"1",@"1",
+                        //Cardio
+                        @"1",@"1",@"1",@"1",@"1",@"1",@"1",
                            
-                           //Balance
-                           @"1",@"1",@"1",@"1",@"1",@"1",@"1",
+                        //Balance
+                        @"1",@"1",@"1",@"1",@"1",@"1",@"1",
                            
-                           //Strength
-                           @"1",@"1",@"1",@"1",@"1",@"1",@"1",
-                           nil] ;
-    // 10 "Times per weel"
+                        //Strength
+                        @"1",@"1",@"1",@"1",@"1",@"1",@"1",
+                        nil] ;
+   
+    // 10 "Times per week"
     ExerciseTimesPerWeekClass = [NSArray arrayWithObjects:
                                 
-                            //Cardio
-                            @"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",
+                        //Cardio
+                        @"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",
                                 
-                            //Balance
-                            @"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",
+                        //Balance
+                        @"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",
                                 
-                            //Strength
-                            @"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",
-                            nil] ;
+                        //Strength
+                        @"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",
+                        nil] ;
     
+    
+    
+    // Font
+    latoReg14 = [UIFont fontWithName:@"Lato-Regular" size:14.0] ;
+    self.exerciseDescriptionLabel.font = latoReg14 ;
+    
+    latoBold19 = [UIFont fontWithName:@"Lato-Bold" size:19.0] ;
+    self.repetitions.font = latoBold19 ;
+    
+    latoReg16 = [UIFont fontWithName:@"Lato-Regular" size:16.0] ;
+    self.repititionsClassLabel.font = latoReg16 ;
+    
+    latoReg16 = [UIFont fontWithName:@"Lato-Regular" size:16.0] ;
+    self.timesPerDayClass.font = latoReg16 ;
+    
+    latoReg16 = [UIFont fontWithName:@"Lato-Regular" size:16.0] ;
+    self.repititionsClassLabel.font = latoReg16 ;
+    
+    latoBold15 = [UIFont fontWithName:@"Lato-Bold" size:15.0] ;
+    self.timesPerWeekClass.font = latoBold15 ;
+
+    //[self configureView];
     
     
 
-    //[self configureView];
 }
 
 - (void)didReceiveMemoryWarning
@@ -222,9 +241,9 @@
 
 - (void) setTableDetail:(NSInteger)tableRow {
     
-    // Set Label
-    NSString *string = [NSString stringWithFormat:@"%d", tableRow] ;
-    self.detailDescriptionLabel.text = [ExerciseTitle objectAtIndex:tableRow]; //access your arrays that you create now to get specific data
+    NSLog(@"setTableDetail for %i", tableRow);
+    
+    self.detailDescriptionLabel.text = [ExerciseTitle objectAtIndex:tableRow];
     self.exerciseDescriptionLabel.text = [ExerciseDetail objectAtIndex:tableRow] ;
     self.repetitions.text = [ExerciseRepetitions objectAtIndex:tableRow] ;
     self.repititionsClassLabel.text = [ExerciseRepetitionsClass objectAtIndex:tableRow] ;
@@ -233,9 +252,6 @@
     self.timesPerWeekNumber.text = [ExerciseTimesPerDay objectAtIndex:tableRow] ;
     self.timesPerWeekClass.text = [ExerciseTimesPerDayClass objectAtIndex:tableRow] ;
     
-    
-
-
 }
 
 
@@ -243,38 +259,53 @@
 
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    NSLog(@"numberOfRowsInSection");
+    NSLog(@"Balance Is %i \n", [BalanceArray count]);
     return [BalanceArray count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell *cell;
+    NSLog(@"cellForRowAtIndexPath");
     
+    UITableViewCell *cell;
+    UIView *selectionColor = [[UIView alloc] init];
+
     if (tableView == tableView1) {
+        NSLog(@"CARDIO CELL");
         cell = [self.tableView1 dequeueReusableCellWithIdentifier:@"cardio"];
         UIImageView *av = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 192, 73)];
         av.image = [CardioArray objectAtIndex:indexPath.row];
         cell.backgroundView = av;
+        selectionColor.backgroundColor = [UIColor colorWithRed:(182/255.0) green:(224/255.0) blue:(253/255.0) alpha:0.5];
+        cell.selectedBackgroundView = selectionColor;
     }
     else if(tableView == tableView2) {
+        NSLog(@"BALANCE CELL");
         cell = [self.tableView2 dequeueReusableCellWithIdentifier:@"balance"];
         UIImageView *av = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 192, 73)];
-        av.image = [BalanceArray objectAtIndex:indexPath.row]; //reference this line here to see how you access an array of items.
+        av.image = [BalanceArray objectAtIndex:indexPath.row];
         cell.backgroundView = av;
-        
+        selectionColor.backgroundColor = [UIColor colorWithRed:(150/255.0) green:(206/255.0) blue:(180/255.0) alpha:0.5];
+        cell.selectedBackgroundView = selectionColor;
     }
     else if(tableView == tableView3) {
+        NSLog(@"STRENGTH CELL");
         cell = [self.tableView3 dequeueReusableCellWithIdentifier:@"strength"];
         UIImageView *av = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 192, 73)];
         av.image = [StrengthArray objectAtIndex:indexPath.row];
         cell.backgroundView = av;
+        selectionColor.backgroundColor = [UIColor colorWithRed:(217/255.0) green:(187/255.0) blue:(252/255.0) alpha:0.5];
+        cell.selectedBackgroundView = selectionColor;
     }
     
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSLog(@"didSelectRowAtIndexPath");
     
     NSInteger cellNumber = indexPath.row;
     
@@ -289,12 +320,69 @@
         cellNumber += [CardioArray count] + [StrengthArray count];
     }
     
-    
     // Call Method
     [self setTableDetail:cellNumber];
     
 }
 
 
+
+- (IBAction)popupAlert:(id)sender {
+    UIAlertView *alert = [[UIAlertView alloc]
+    initWithTitle:@"Exercise Prescription"
+    message:@"Have you completed your exercise prescription. Click Ok to release for use."
+    delegate:self
+    cancelButtonTitle:@"Cancel"
+    otherButtonTitles:@"Ok", nil] ;
+    
+    [alert show] ;
+    
+}
+
+- (IBAction)popupText:(id)sender {
+    UIAlertView *alert = [[UIAlertView alloc]
+    initWithTitle:@"Exercise Note"
+    message:@"Enter your excercise note."
+    delegate:self
+    cancelButtonTitle:@"Cancel"
+    otherButtonTitles:@"Ok", nil] ;
+    [alert setAlertViewStyle: UIAlertViewStylePlainTextInput] ;
+
+    [alert show] ;
+    
+    /*
+     
+     - (IBAction)beginExercise:(id)sender {
+     
+     //Set Url
+     NSURL *movieURL = [[NSBundle mainBundle] URLForResource:@"seatedBicepCurl" withExtension:@"m4v"];
+     
+     //Set Player
+     moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:movieURL];
+     
+     //Set Frame
+     // [[moviePlayer view] setFrame:[self.videoView bounds]];
+     moviePlayer.view.frame = CGRectMake(371, 89, 730, 392);
+     
+     [self.view addSubview:[moviePlayer view]];
+     
+     // Controls
+     moviePlayer.controlStyle = MPMovieControlStyleDefault;
+     
+     // Play
+     [moviePlayer play];
+     
+     */
+    
+    
+}
+
+- (IBAction)videoStart:(id)sender {
+}
+
+
+
+
+    
 
 @end
