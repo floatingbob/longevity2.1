@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <MediaPlayer/MPMoviePlayerController.h>
+
+
 
 @interface PatientExercisesViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
     
@@ -29,10 +30,9 @@
     NSArray *ExerciseTimesPerWeek;
     NSArray *ExerciseTimesPerWeekClass;
     
-    
-  
-    
+
 }
+
 
 
 
@@ -51,6 +51,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *timesPerWeekClass;
 - (IBAction)popupAlert:(id)sender;
 - (IBAction)popupText:(id)sender;
+
+
 
 
 

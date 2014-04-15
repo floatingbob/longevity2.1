@@ -403,7 +403,6 @@
                                 </state>
                                 <connections>
                                     <action selector="videoStart:" destination="C3z-5H-Ac1" eventType="touchUpInside" id="4Dj-F5-3Un"/>
-                                    <segue destination="jIB-V9-csx" kind="modal" id="BBF-n7-Sv3"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -423,6 +422,7 @@
                         <outlet property="timesPerDayNumber" destination="Azf-4y-7jY" id="qqm-wa-tAZ"/>
                         <outlet property="timesPerWeekClass" destination="0pM-Vs-l5v" id="JCE-aE-gkR"/>
                         <outlet property="timesPerWeekNumber" destination="Gdc-6S-YKX" id="dEY-ii-Z5W"/>
+                        <outlet property="videoView" destination="XrD-NB-q0d" id="6Tc-vB-aLF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aiL-a5-bnF" userLabel="First Responder" sceneMemberID="firstResponder"/>

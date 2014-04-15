@@ -11,9 +11,12 @@
 
 @implementation PatientExercisesViewController
 
+
+
 //make white header text
 -(UIStatusBarStyle)preferredStatusBarStyle{
     return UIStatusBarStyleLightContent;
+    
 }
 
 // Synthesize
@@ -205,6 +208,8 @@
                         @"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",@"Times per week",
                         nil] ;
     
+  
+
     
     
     // Font
@@ -350,35 +355,11 @@
 
     [alert show] ;
     
-    /*
-     
-     - (IBAction)beginExercise:(id)sender {
-     
-     //Set Url
-     NSURL *movieURL = [[NSBundle mainBundle] URLForResource:@"seatedBicepCurl" withExtension:@"m4v"];
-     
-     //Set Player
-     moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:movieURL];
-     
-     //Set Frame
-     // [[moviePlayer view] setFrame:[self.videoView bounds]];
-     moviePlayer.view.frame = CGRectMake(371, 89, 730, 392);
-     
-     [self.view addSubview:[moviePlayer view]];
-     
-     // Controls
-     moviePlayer.controlStyle = MPMovieControlStyleDefault;
-     
-     // Play
-     [moviePlayer play];
-     
-     */
+
     
     
 }
 
-- (IBAction)videoStart:(id)sender {
-}
 
 
 
